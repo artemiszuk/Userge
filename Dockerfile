@@ -5,6 +5,7 @@ FROM python:3.8
 WORKDIR /app/
 
 RUN apt -qq update
+RUN apt install megatools
 RUN apt -qq install -y --no-install-recommends \
     aria2 \
     megatools \
