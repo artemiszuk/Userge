@@ -6,6 +6,8 @@ WORKDIR /app/
 
 RUN apt -qq update
 RUN apt -qq install -y --no-install-recommends \
+    aria2 \
+    megatools \
     curl \
     git \
     gnupg2 \
